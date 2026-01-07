@@ -119,7 +119,11 @@ print("Field in midplane (z=0):")
 display(Image('/content/midplane_field.png'))
 ```
 
-Or only downloading and simulating with colab:
+* Note: If Octave version changes, adjust `6.4.0` accordingly (check with `!octave-config -v`).
+
+----------
+
+Or only downloading built mex files and simulating with colab:
 
 ```
 %%capture
