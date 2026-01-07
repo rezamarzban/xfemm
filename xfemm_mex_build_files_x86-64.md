@@ -133,7 +133,7 @@ Or only downloading and simulating with colab:
 ```
 
 ```
-!tar -xzvf xfemm_mex_build_files_x86-64.tar.gz -C xfemm/mfemm
+!tar -xzvf xfemm_mex_build_files_x86-64.tar.gz -C /content/xfemm/mfemm
 ```
 
 ```
