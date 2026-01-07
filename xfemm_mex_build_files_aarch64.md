@@ -1,4 +1,4 @@
-building and simulating with userland:
+Building and running a simulation with userland:
 
 ```
 sudo apt update
@@ -27,12 +27,14 @@ addpath(genpath(pwd()));
 mfemm_setup('ForceMexRecompile', true, 'Verbose', true);
 ```
 
+Then run:
 ```
 export LIBRARY_PATH="/usr/lib/aarch64-linux-gnu/octave/6.4.0:$LIBRARY_PATH"
 octave setup.m
 ```
 
 ```
+cd ~
 nano sim.m
 ```
 
@@ -100,6 +102,9 @@ legend('B_z', 'B_r', '|B|'); grid on;
 print('/home/userland/midplane_field.png', '-dpng', '-r150');
 ```
 
+Then run:
 ```
 octave --eval "addpath(genpath('~/xfemm/mfemm')); source('~/sim.m');"
 ```
+
+* Note: If Octave version changes, adjust `6.4.0` accordingly (check with `octave-config -v`).
