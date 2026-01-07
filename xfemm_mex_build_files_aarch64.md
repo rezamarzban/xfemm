@@ -33,6 +33,17 @@ export LIBRARY_PATH="/usr/lib/aarch64-linux-gnu/octave/6.4.0:$LIBRARY_PATH"
 octave setup.m
 ```
 
+Or simply download built `mex` files instead of building from previous steps:
+```
+sudo apt update
+sudo apt-get install -y wget nano octave git gnuplot
+cd ~
+git clone https://github.com/crobarcro/xfemm.git xfemm
+wget https://github.com/rezamarzban/xfemm/raw/refs/heads/master/xfemm_mex_build_files_aarch64.tar.gz
+tar -xzvf xfemm_mex_build_files_aarch64.tar.gz -C ~/xfemm/mfemm
+```
+
+Then run:
 ```
 cd ~
 nano sim.m
