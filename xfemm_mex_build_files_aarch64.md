@@ -3,7 +3,7 @@ Building and running a simulation with userland:
 ```
 sudo apt update
 sudo apt-get install -y nano octave liboctave-dev g++ git cmake liblapack-dev libblas-dev gnuplot
-git clone https://github.com/crobarcro/xfemm.git xfemm
+git clone https://github.com/rezamarzban/xfemm.git xfemm
 cd xfemm/cfemm/libfemm
 cp femmversion.h.in femmversion.h
 sed -i 's/@XFEMM_VERSION_MAJOR@/0/g' femmversion.h
@@ -38,7 +38,7 @@ Or simply download built `mex` files instead of building from previous steps:
 sudo apt update
 sudo apt-get install -y wget nano octave git gnuplot
 cd ~
-git clone https://github.com/crobarcro/xfemm.git xfemm
+git clone https://github.com/rezamarzban/xfemm.git xfemm
 wget https://github.com/rezamarzban/xfemm/raw/refs/heads/master/xfemm_mex_build_files_aarch64.tar.gz
 tar -xzvf xfemm_mex_build_files_aarch64.tar.gz -C ~/xfemm/mfemm
 ```
