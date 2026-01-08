@@ -4,7 +4,7 @@ building and simulating with colab:
 %%capture
 !apt-get update
 !apt-get install -y octave liboctave-dev g++ git cmake liblapack-dev libblas-dev gnuplot
-!git clone https://github.com/crobarcro/xfemm.git /content/xfemm
+!git clone https://github.com/rezamarzban/xfemm.git /content/xfemm
 ```
 
 ```
@@ -129,7 +129,7 @@ Or only downloading built mex files and simulating with colab:
 %%capture
 !apt-get update
 !apt-get install -y octave git gnuplot
-!git clone https://github.com/crobarcro/xfemm.git /content/xfemm
+!git clone https://github.com/rezamarzban/xfemm.git /content/xfemm
 ```
 
 ```
